@@ -1,0 +1,55 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Starbuck's Landing Page"> 
+      <link rel="stylesheet" href="starbucks.css">
+      <title>Starbuck's Website Landing Page</title> 
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" class="logo"><img src="logo.png" alt="Starbucks Logo"></a>
+                <ul>
+                    <li><a href="£">Home</a></li>
+                    <li><a href="%">Menu</a></li>
+                    <li><a href="^">What's New</a></li>
+                    <li><a href="&">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo natus tempore fuga! Natus eaque mollitia 
+                    maiores nemo. Ipsam nostrum dicta non hictemporibus velit sapiente, architecto numquam? Optio, eos dolores.</p>
+                    <a href="&">Learn More</a>
+                </div>
+                <div class="imgBox"></div>
+                    <img src="img1.png" class="starbuck" width="300px">
+                </div>
+            </div>
+            <ul class="thumbnail">
+                <li><img src="img1.png" width="120px" onmouseover="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+                <li><img src="img3.png" width="120px" onmouseover="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+                <li><img src="img2.png" width="120px" onmouseover="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>   
+            </ul>
+            <ul class="sci">
+                <li><a href="£"><img src="facebook.png"></a></li>
+                <li><a href="£"><img src="twitter.png"></a></li>
+                <li><a href="£"><img src="facebook.png"></a></li>
+            </ul>
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.starbuck').src = anything;
+            }
+
+            function changeCircleColor(color) {
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+    </html>
